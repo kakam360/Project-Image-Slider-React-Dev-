@@ -1,0 +1,41 @@
+/* ImageSlider.css */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  overflow: hidden;
+  height: 300px; /* Adjust the height as needed */
+}
+
+.left {
+  margin-right: 10px;
+}
+
+.right {
+  margin-left: 10px;
+}
